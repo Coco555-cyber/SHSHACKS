@@ -1,1 +1,185 @@
-<p>Hello World</p>
+<html>
+
+    <head>
+        <link id="themeStyleSheet" rel="styleSheet" href="css/light.css">
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
+
+        <script src="code.js"></script>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+            }
+
+            body {
+                font-family: Cabin;
+                align-self: center;
+                text-align: center;
+            }
+
+            #navbar a {
+                color: black;
+                text-decoration: none;
+                padding: 1rem;
+            }
+
+            #navbar a:hover {
+                background: #1c8b41;
+                color: white;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.5);
+                -webkit-animation: fadein 0.7s;
+            }
+
+            @keyframes fadein {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+            #navbar {
+                position: fixed;
+                display: flex;
+                align-items: center;
+                background: linear-gradient(#2FDA77, #229b54);
+                width: 100%;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 10px 6px rgba(0, 0, 0, 0.5);
+            }
+
+            #navbar ul {
+                margin-left: 1vw;
+                margin-top: 0.7vw;
+                width: 100%;
+                padding: 15px;
+                font-size: 20px;
+                width: 20vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            #navbar li {
+                list-style: none;
+            }
+
+            #navbar img {
+                margin-left: 1vw;
+                padding: 0;
+                margin-top: -25px;
+                height: 70px;
+            }
+
+            #introduction {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100vh;
+                background: #5e5e5e;
+            }
+
+            #introduction h1 {
+                margin-top: 40px;
+                font-size: 70px;
+                -webkit-animation: fadein 3s;
+            }
+
+            #introduction h2 {
+                margin-bottom: 20px;
+                font-size: 20px;
+                -webkit-animation: fadein 3s;
+            }
+
+            #introduction div {
+                width: 100%;
+                background: rgb(134, 134, 134);
+                /* background: linear-gradient(#25a85c, #34ff88); */
+            }
+
+            #introduction img {
+                align-self: center;
+                width: 20vw;
+                /* box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 10px 6px rgba(0, 0, 0, 0.5); */
+            }
+
+            #introduction p {
+                margin: 20px;
+                text-align: left;
+                max-width: 40vw;
+                line-height: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <main>
+
+            <navbar id="navbar">
+
+                <ul>
+
+                    <li>
+                        <img
+                            src="https://cdn.discordapp.com/attachments/703103494143606795/836335572624474148/Untitled_Artwork.png">
+                    </li>
+
+                    <li>
+                        <a href="#introduction">Introduction</a>
+                    </li>
+
+                    <li>
+                        <a href="instructions">Instructions</a>
+                    </li>
+
+                    <li>
+                        <a href="">Game</a>
+                    </li>
+
+                    <li>
+                        <a href="">Credits</a>
+                    </li>
+
+                </ul>
+            </navbar>
+
+            <section id="introduction">
+                <h1>Insert Title Here</h1>
+                <h2>Insert Short Description</h2>
+
+                <div>
+                    <img
+                        src="https://cdn.discordapp.com/attachments/703103494143606795/836335572624474148/Untitled_Artwork.png">
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum</p>
+
+            </section>
+
+            <section id="instructions">
+
+            </section>
+
+            <form action="./" method="post">
+                <select id="theme">
+                    <option selected value="light">Light Mode</option>
+                    <option value="dark">Dark Mode</option>
+                    <option value="traditional">Traditional Mode</option>
+                </select>
+                <input type="submit" value="Save Theme">
+            </form>
+        </main>
+    </body>
+
+</html>
