@@ -3,5 +3,5 @@ let themeStyleSheet = document.getElementById("themeStyleSheet");
 
 themeSelect.addEventListener("change", function() {
   console.log(this.value);
-  themeStyleSheet.setAttribute("href", "css/" + this.value + ".css");
+  themeStyleSheet.setAttribute("href", this.value + ".css");
 });
