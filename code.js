@@ -1,8 +1,7 @@
 let themeSelect = document.getElementById("theme");
-let themeStylesheet = document.getElementById("themeStylesheet");
+let themeStyleSheet = document.getElementById("themeStyleSheet");
 
 themeSelect.addEventListener("change", function() {
-  themeStylesheet.setAttribute("href", "css/" + this.value + ".css")
+  console.log(this.value);
+  themeStyleSheet.setAttribute("href", "css/" + this.value + ".css");
 });
-
-console.log("a");
